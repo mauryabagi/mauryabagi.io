@@ -1,0 +1,16 @@
+Keep every file in ONE place, next to index.html. No folders.
+
+maurya.jpg                  your photo
+banner.jpg                  skyline image
+Maurya_Bagi_Resume.pdf      your resume
+logo-drect.png              Drect app icon
+logo-teamfrh.png            TeamFRH app icon
+
+To add later (exact names, lowercase):
+logo-frh.png  logo-ecs.png  logo-bits.png          company logos
+cert-mckinsey.jpg           cert-microsoft-dynamics.jpg   cert-hp-life-agile.jpg
+cert-pmi-intro-pmp.jpg      cert-hp-life-data-science.jpg cert-microsoft-data-analysis.jpg
+cert-outskill-genai.jpg     cert-google-analytics.jpg     cert-pwc-forage.jpg
+cert-bcg-forage.jpg         certificate images (.jpg or .png)
+issuer-google.svg, issuer-microsoft.svg, issuer-mckinsey.svg, issuer-hp-life.svg, issuer-pmi.svg,
+issuer-outskill.svg, issuer-pwc.svg, issuer-bcg.svg, issuer-siemens.svg, issuer-forage.svg   optional banner logos (.svg or .png)

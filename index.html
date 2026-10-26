@@ -84,7 +84,7 @@ h2{font-size:clamp(34px,5vw,56px);margin-bottom:18px}
 
 /* hero */
 .hero{position:relative;z-index:0;min-height:100vh;display:flex;align-items:center;padding:110px 0 calc(90px + var(--r));color:#fff;background:radial-gradient(900px 520px at 85% 8%,rgba(120,120,128,.38),transparent 70%),linear-gradient(160deg,#000 0%,#161618 52%,#3a3a3c 135%)}
-.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;background:url(assets/banner.jpg) center bottom/cover no-repeat;opacity:.26;filter:grayscale(1) contrast(1.1);-webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);mask-image:linear-gradient(180deg,transparent,#000 70%);pointer-events:none}
+.hero::before{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;background:url(banner.jpg) center bottom/cover no-repeat;opacity:.26;filter:grayscale(1) contrast(1.1);-webkit-mask-image:linear-gradient(180deg,transparent,#000 70%);mask-image:linear-gradient(180deg,transparent,#000 70%);pointer-events:none}
 .hero>.wrap{width:100%;position:relative;z-index:1}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
 .hero h1{font-size:clamp(54px,9vw,116px);line-height:.95;letter-spacing:-.045em;margin-bottom:22px;color:#fff}
@@ -181,7 +181,7 @@ h2{font-size:clamp(34px,5vw,56px);margin-bottom:18px}
 
 /* certifications */
 .cert-sec{padding-bottom:0}
-.banner{position:relative;margin-top:56px;height:230px;display:flex;align-items:center;overflow:hidden;background:#111 url(assets/banner.jpg) center/cover no-repeat}
+.banner{position:relative;margin-top:56px;height:230px;display:flex;align-items:center;overflow:hidden;background:#111 url(banner.jpg) center/cover no-repeat}
 .banner::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35) 50%,rgba(0,0,0,.6))}
 .band{position:relative;width:100%;background:rgba(255,255,255,.14);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-block:1px solid rgba(255,255,255,.22);padding:24px 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .track-m{display:flex;width:max-content;animation:slide 38s linear infinite}
@@ -293,7 +293,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
       <li><a href="#skills">Skills</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener" class="cta">Resume</a></li>
+      <li><a href="Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener" class="cta">Resume</a></li>
     </ul>
   </div>
   <div class="bar" id="bar"></div>
@@ -313,8 +313,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
           <span><i data-icon="pin"></i>Bengaluru, Karnataka, India</span>
         </div>
         <div class="hero-actions in" style="--d:5">
-          <a class="btn solid" href="assets/Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener"><i data-icon="eye"></i>View resume</a>
-          <a class="btn line" href="assets/Maurya_Bagi_Resume.pdf" download="Maurya_Bagi_Resume.pdf"><i data-icon="download"></i>Download resume</a>
+          <a class="btn solid" href="Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener"><i data-icon="eye"></i>View resume</a>
+          <a class="btn line" href="Maurya_Bagi_Resume.pdf" download="Maurya_Bagi_Resume.pdf"><i data-icon="download"></i>Download resume</a>
         </div>
       </div>
       <div class="photo in" style="--d:3" id="photo"><b>MB</b></div>
@@ -522,7 +522,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         <div class="acts"><a class="glink" href="tel:+919535409094">Call<i data-icon="phone"></i></a></div></div>
       <div class="card wide reveal">
         <div class="l"><span class="ci"><i data-icon="file"></i></span><div><b>Maurya Bagi Resume</b></div></div>
-        <div class="acts"><a class="glink" href="assets/Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener">View<i data-icon="eye"></i></a><a class="glink" href="assets/Maurya_Bagi_Resume.pdf" download="Maurya_Bagi_Resume.pdf">Download<i data-icon="download"></i></a></div>
+        <div class="acts"><a class="glink" href="Maurya_Bagi_Resume.pdf" target="_blank" rel="noopener">View<i data-icon="eye"></i></a><a class="glink" href="Maurya_Bagi_Resume.pdf" download="Maurya_Bagi_Resume.pdf">Download<i data-icon="download"></i></a></div>
       </div>
     </div>
   </div>
@@ -598,20 +598,20 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     })();
   }
 
-  probe(['assets/maurya.jpg', 'assets/maurya.png'], function (src) {
+  probe(['maurya.jpg', 'maurya.png'], function (src) {
     $('#photo').innerHTML = '<img src="' + src + '" alt="Maurya Bagi">';
   });
-  /* Company logos: assets/logos/frh, ecs, bits (.png or .svg). A monogram shows until the file exists. */
+  /* Company logos: logo-frh, logo-ecs, logo-bits (.png or .svg). A monogram shows until the file exists. */
   $$('[data-logo]').forEach(function (el) {
     var n = el.getAttribute('data-logo');
     el.innerHTML = '<b>' + esc(el.getAttribute('data-mono') || '') + '</b>';
-    probe(['assets/logos/' + n + '.png', 'assets/logos/' + n + '.svg'], function (src) {
+    probe(['logo-' + n + '.png', 'logo-' + n + '.svg'], function (src) {
       el.innerHTML = '<img src="' + src + '" alt="">';
     });
   });
   [['drect', 'Drect'], ['teamfrh', 'TeamFRH']].forEach(function (a) {
     var el = $('[data-ic="' + a[0] + '"]');
-    probe(['assets/logos/' + a[0] + '.png', 'assets/logos/' + a[0] + '.svg'], function (src) {
+    probe(['logo-' + a[0] + '.png', 'logo-' + a[0] + '.svg'], function (src) {
       el.innerHTML = '<img src="' + src + '" alt="' + a[1] + ' app icon">';
     });
   });
@@ -725,7 +725,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   }).join('');
 
   /* ---------- certifications ---------- */
-  /* Certificate images: assets/certs/<file>.jpg or .png. A row opens its image once the file exists. */
+  /* Certificate images: cert-<file>.jpg or .png. A row opens its image once the file exists. */
   var CERTS = [
     { name: "McKinsey Forward Program", issuer: "McKinsey & Company", date: "June 2026", file: "mckinsey" },
     { name: "Project Management in Dynamics 365 Project Operations", issuer: "Microsoft", date: "May 2026", file: "microsoft-dynamics" },
@@ -746,7 +746,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   paintIcons(certList);
   CERTS.forEach(function (c, i) {
     if (!c.file) return;
-    probe(['assets/certs/' + c.file + '.jpg', 'assets/certs/' + c.file + '.png', 'assets/certs/' + c.file + '.jpeg'], function (src) {
+    probe(['cert-' + c.file + '.jpg', 'cert-' + c.file + '.png', 'cert-' + c.file + '.jpeg'], function (src) {
       c.src = src;
       $('[data-i="' + i + '"]', certList).classList.add('has');
     });
@@ -757,7 +757,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     if (c.src) openModal('<img src="' + c.src + '" alt="' + esc(c.name) + ' certificate">', true);
   });
 
-  /* Issuer logos: add assets/issuers/<slug>.svg or .png to replace the name in the banner. */
+  /* Issuer logos: add issuer-<slug>.svg or .png to replace the name in the banner. */
   var ISSUERS = [["google", "Google"], ["microsoft", "Microsoft"], ["mckinsey", "McKinsey & Company"], ["hp-life", "HP LIFE"], ["pmi", "PMI"], ["outskill", "Outskill"], ["pwc", "PwC"], ["bcg", "BCG"], ["siemens", "Siemens"], ["forage", "Forage"]];
   function marks() {
     return ISSUERS.map(function (a) { return '<span class="brandmark" data-slug="' + a[0] + '">' + esc(a[1]) + '</span>'; }).join('');
@@ -765,7 +765,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   var mq = $('#marquee');
   mq.innerHTML = marks() + marks();
   ISSUERS.forEach(function (a) {
-    probe(['assets/issuers/' + a[0] + '.svg', 'assets/issuers/' + a[0] + '.png'], function (src) {
+    probe(['issuer-' + a[0] + '.svg', 'issuer-' + a[0] + '.png'], function (src) {
       $$('[data-slug="' + a[0] + '"]', mq).forEach(function (el) { el.innerHTML = '<img src="' + src + '" alt="' + esc(a[1]) + '">'; });
     });
   });
