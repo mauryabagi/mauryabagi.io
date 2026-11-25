@@ -5,19 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maurya Bagi | Portfolio</title>
 <meta name="description" content="Portfolio of Maurya Bagi. Digital products and transformation, based in Dubai, United Arab Emirates and Bengaluru, India.">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#14110F">
 <meta property="og:title" content="Maurya Bagi | Portfolio">
 <meta property="og:description" content="Digital products and transformation. Dubai, United Arab Emirates and Bengaluru, India.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://mauryabagi.github.io/maurya.jpg">
+<meta property="og:url" content="https://mauryabagi.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial' font-size='28' font-weight='600' fill='%23fff' text-anchor='middle'%3EMB%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <noscript><style>.reveal,.hero .in{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 <style>
 :root{
-  --black:#000;--ink:#0b0b0c;--g900:#1d1d1f;--g700:#424245;--g600:#6e6e73;--g500:#86868b;--g300:#d2d2d7;--g200:#e8e8ed;--g100:#f5f5f7;--white:#fff;
-  --l1:#0a84ff;--l2:#5e5ce6;
+  --black:#000;--ink:#1d1d1f;--g900:#1d1d1f;--g700:#424245;--g600:#6e6e73;--g500:#86868b;--g300:#d2d2d7;--g200:#e8e8ed;--g100:#f5f5f7;--paper:#fff;--soft:#f5f5f7;--green:#2E9B4F;--green-d:#5CCB7B;--white:#fff;
+  --l1:#1d1d1f;--l2:#6e6e73;
   --ease:cubic-bezier(.22,.61,.36,1);
   --gutter:clamp(20px,5vw,56px);
   --r:36px;
@@ -35,15 +34,15 @@ svg.i{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.8;stroke
 .glink::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:linear-gradient(90deg,var(--l1),var(--l2));opacity:.35;transition:opacity .3s var(--ease)}
 .glink:hover::after{opacity:1}
 .glink svg{stroke:var(--l2)}
-.dark .glink{background-image:linear-gradient(90deg,#64d2ff,#b3a8ff)}
-.dark .glink svg{stroke:#b3a8ff}
-.pill{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:99px;font-size:14px;font-weight:500;border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.dark .glink{background-image:linear-gradient(90deg,#f5f5f7,#a1a1a6)}
+.dark .glink svg{stroke:#a1a1a6}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:99px;font-size:14px;font-weight:500;border:1px solid transparent;background:linear-gradient(var(--paper),var(--paper)) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
 .pill span{background:linear-gradient(90deg,var(--l1),var(--l2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .pill svg{stroke:var(--l2)}
-.pill:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(94,92,230,.22)}
-.dark .pill{background:linear-gradient(#0b0b0c,#0b0b0c) padding-box,linear-gradient(90deg,#64d2ff,#b3a8ff) border-box}
-.dark .pill span{background-image:linear-gradient(90deg,#64d2ff,#b3a8ff)}
-.dark .pill svg{stroke:#b3a8ff}
+.pill:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.dark .pill{background:linear-gradient(#0b0b0c,#0b0b0c) padding-box,linear-gradient(90deg,#f5f5f7,#a1a1a6) border-box}
+.dark .pill span{background-image:linear-gradient(90deg,#f5f5f7,#a1a1a6)}
+.dark .pill svg{stroke:#a1a1a6}
 
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:99px;font-size:15px;font-weight:500;transition:transform .3s var(--ease),background .3s,box-shadow .3s}
 .btn:hover{transform:translateY(-2px)}
@@ -56,18 +55,22 @@ svg.i{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.8;stroke
 .chip{display:inline-block;padding:5px 12px;border-radius:8px;background:var(--g100);border:1px solid var(--g200);font-size:13px;color:var(--g700);line-height:1.4}
 .dark .chip{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#d2d2d7}
 
-.eyebrow{display:inline-block;font-size:13.5px;font-weight:600;margin-bottom:16px;letter-spacing:.02em;padding:5px 14px;border-radius:99px;border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;color:var(--l2)}
+.eyebrow{display:inline-block;font-size:13.5px;font-weight:600;margin-bottom:16px;letter-spacing:.02em;padding:5px 14px;border-radius:99px;border:1px solid transparent;background:linear-gradient(var(--paper),var(--paper)) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;color:var(--l2)}
 .sec.grey .eyebrow{background:linear-gradient(var(--g100),var(--g100)) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box}
-.tag{display:inline-block;font-size:13px;font-weight:600;padding:4px 13px;border-radius:99px;border:1px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;color:var(--l2);margin-bottom:16px}
-h1,h2,h3{font-weight:600;letter-spacing:-.02em;line-height:1.08;color:var(--black)}
-.dark h2,.dark h3{color:#fff}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:4px 13px;border-radius:99px;border:1px solid transparent;background:linear-gradient(var(--paper),var(--paper)) padding-box,linear-gradient(90deg,var(--l1),var(--l2)) border-box;color:var(--l2);margin-bottom:16px}
+h1,h2,h3,.brand,.stat b{font-family:Inter,-apple-system,'Helvetica Neue',Arial,sans-serif}
+h1,h2,h3{font-weight:600;letter-spacing:-.03em;line-height:1.1;color:var(--black)}
+h2{color:var(--green)}
+.dark h3{color:#fff}
+.dark h2{color:var(--green-d)}
 h2{font-size:clamp(34px,5vw,56px);margin-bottom:18px}
-.sec-head h2::after{content:"";display:block;width:64px;height:4px;border-radius:4px;margin-top:18px;background:linear-gradient(90deg,var(--l1),var(--l2))}
+.sec-head h2::after{content:"";display:block;width:56px;height:4px;border-radius:4px;margin-top:18px;background:var(--green)}
+.dark .sec-head h2::after{background:var(--green-d)}
 p b{font-weight:600;color:var(--g900)}
 .hero p b{color:#fff}
 .lede{font-size:clamp(18px,2vw,21px);color:var(--g600);max-width:640px;line-height:1.5}
 
-.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(0,0,0,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(255,255,255,.1)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
 .brand{font-weight:600;font-size:16px;letter-spacing:-.01em;color:#fff}
 .nav ul{display:flex;gap:26px;list-style:none;align-items:center}
@@ -78,19 +81,19 @@ p b{font-weight:600;color:var(--g900)}
 .menu{display:none;width:40px;height:40px;align-items:center;justify-content:center;font-size:22px}
 .bar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--l1),var(--l2))}
 
-.sec{position:relative;border-radius:var(--r) var(--r) 0 0;margin-top:calc(var(--r) * -1);padding:calc(110px + var(--r)) 0 110px;background:#fff}
+.sec{position:relative;border-radius:var(--r) var(--r) 0 0;margin-top:calc(var(--r) * -1);padding:calc(96px + var(--r)) 0 96px;background:var(--paper)}
 .sec.grey{background:var(--g100)}
 .sec.dark{background:var(--ink);color:#fff}
 .sec:nth-of-type(1){z-index:1}.sec:nth-of-type(2){z-index:2}.sec:nth-of-type(3){z-index:3}.sec:nth-of-type(4){z-index:4}.sec:nth-of-type(5){z-index:5}.sec:nth-of-type(6){z-index:6}
 .sec-head{margin-bottom:56px}
 
-.hero{position:relative;z-index:0;min-height:100vh;display:flex;align-items:center;padding:110px 0 calc(90px + var(--r));color:#fff;background:radial-gradient(900px 520px at 85% 8%,rgba(120,120,128,.38),transparent 70%),linear-gradient(160deg,#000 0%,#161618 52%,#3a3a3c 135%)}
+.hero{position:relative;z-index:0;min-height:100vh;display:flex;align-items:center;padding:110px 0 calc(90px + var(--r));color:#fff;background:linear-gradient(160deg,#000 0%,#111 45%,#3a3a3c 135%)}
 .hero>.wrap{width:100%;position:relative;z-index:1}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
-.hero h1{font-size:clamp(54px,9vw,116px);line-height:1.08;letter-spacing:-.04em;margin-bottom:22px;color:#fff}
+.hero h1{font-size:clamp(54px,9vw,112px);line-height:1.06;letter-spacing:-.04em;font-weight:600;margin-bottom:22px;color:#fff}
 .hero h1 span{display:block}
-.hero h1 span+span{color:#6e6e73;margin-left:clamp(0px,5vw,72px);margin-top:.06em}
-.role{font-size:clamp(20px,2.4vw,26px);font-weight:500;margin-bottom:26px;background:linear-gradient(90deg,#64d2ff,#b3a8ff);-webkit-background-clip:text;background-clip:text;color:transparent;width:fit-content}
+.hero h1 span+span{color:#86868b;margin-left:clamp(0px,5vw,72px);margin-top:.06em}
+.role{font-size:clamp(20px,2.4vw,26px);font-weight:500;margin-bottom:26px;color:var(--green-d);width:fit-content}
 .lead{font-size:clamp(20px,2.3vw,26px);line-height:1.35;color:#f5f5f7;font-weight:500;letter-spacing:-.01em;max-width:620px;margin-bottom:22px}
 .hero p.body{color:#a1a1a6;max-width:600px;margin-bottom:16px}
 .where{display:flex;flex-wrap:wrap;gap:8px 24px;margin:26px 0 30px;color:var(--g300);font-size:15px}
@@ -100,13 +103,13 @@ p b{font-weight:600;color:var(--g900)}
 .hero .btn.solid:hover{box-shadow:0 10px 30px rgba(255,255,255,.18)}
 .hero .btn.line{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
 .hero .btn.line:hover{border-color:#fff}
-.photo{aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 30px 80px rgba(0,0,0,.6);max-width:380px;margin-left:auto;width:100%}
+.photo{align-self:start;margin-top:24px;aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(255,255,255,.12),0 30px 80px rgba(0,0,0,.6);max-width:380px;margin-left:auto;width:100%}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .photo b{font-size:84px;font-weight:600;color:var(--g300);letter-spacing:-.04em}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:72px;border-top:1px solid rgba(255,255,255,.16)}
 .stat{padding:28px 24px 0 0}
 .stat+.stat{padding-left:24px;border-left:1px solid rgba(255,255,255,.16)}
-.stat b{display:block;font-size:clamp(38px,5vw,60px);font-weight:600;letter-spacing:-.03em;line-height:1;color:#fff}
+.stat b{display:block;font-size:clamp(38px,5vw,60px);font-weight:500;letter-spacing:-.02em;line-height:1;color:#fff}
 .stat b sup{font-size:.45em;font-weight:500;vertical-align:.8em;margin-left:2px;color:var(--g500)}
 .stat>span{display:block;margin-top:10px;font-size:14px;color:#a1a1a6;line-height:1.4;max-width:210px}
 .hero .in{opacity:0;transform:translateY(22px);filter:blur(8px);animation:rise 1s var(--ease) forwards;animation-delay:calc(var(--d,0) * 110ms + 100ms)}
@@ -115,7 +118,7 @@ p b{font-weight:600;color:var(--g900)}
 .reveal{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease);transition-delay:calc(var(--d,0) * 90ms)}
 .reveal.in{opacity:1;transform:none;filter:none}
 
-.role-block{display:grid;grid-template-columns:300px 1fr;gap:56px;padding:48px 0;border-top:1px solid var(--g200)}
+.role-block{display:grid;grid-template-columns:300px 1fr;gap:56px;padding:40px 0;border-top:1px solid var(--g200)}
 .role-block:first-of-type{border-top:0;padding-top:0}
 .co{position:sticky;top:96px;align-self:start}
 .logo{width:56px;height:56px;border-radius:14px;border:1px solid var(--g200);background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:18px}
@@ -127,12 +130,14 @@ p b{font-weight:600;color:var(--g900)}
 .co .when{color:var(--g500);font-size:14px;margin-top:2px}
 .intro{font-size:18px;color:var(--g700);max-width:640px;margin-bottom:12px}
 .items{margin-top:8px}
-.item{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--g200)}
+.item{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--g200)}
 .item:first-child{border-top:0}
-.item .ic{width:52px;height:52px;border-radius:13px;overflow:hidden;background:var(--g100);display:flex;align-items:center;justify-content:center;color:var(--g500);font-size:18px}
+.item .ic{width:56px;height:56px;border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#fafafa,#e8e8ed);display:flex;align-items:center;justify-content:center;color:var(--l1);font-size:27px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.item .ic svg{fill:currentColor;fill-opacity:.14;stroke-width:1.6}
+.item .ic[data-ic]{background:#fff;box-shadow:inset 0 0 0 1px var(--g200)}
 .item .ic img{width:100%;height:100%;object-fit:cover}
-.item h4{font-size:17px;font-weight:600;color:var(--black);letter-spacing:-.01em;margin-bottom:4px}
-.item p{color:var(--g600);font-size:15.5px;max-width:640px}
+.item h4{font-size:18px;font-weight:600;color:var(--black);letter-spacing:-.01em;margin-bottom:4px}
+.item p{color:var(--g600);font-size:16px;max-width:620px}
 .item .chips{margin-top:12px}
 .sub-h{font-size:19px;font-weight:600;color:var(--black);margin:30px 0 14px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
 .sub-h::before{content:"";width:4px;height:20px;border-radius:4px;background:linear-gradient(180deg,var(--l1),var(--l2))}
@@ -147,13 +152,15 @@ p b{font-weight:600;color:var(--g900)}
 .panel h4::before{content:"";width:4px;height:20px;border-radius:4px;background:linear-gradient(180deg,var(--l1),var(--l2))}
 .panel p{color:var(--g600);font-size:15px;margin-bottom:14px}
 
+.course-grid{display:grid;gap:18px;margin-bottom:34px}
+.course h5{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--g600);margin-bottom:8px}
 .timeline{list-style:none;margin:6px 0 0}
 .timeline li{position:relative;padding:0 0 26px 36px}
 .timeline li::before{content:"";position:absolute;left:0;top:5px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--l1)}
-.timeline li::after{content:"";position:absolute;left:5.5px;top:22px;bottom:-4px;width:2px;background:linear-gradient(180deg,var(--l1),var(--l2));opacity:.55}
-.timeline li.end{padding-bottom:0}
-.timeline li.end::before{width:19px;height:19px;left:-3px;top:2px;background:linear-gradient(135deg,var(--l1),var(--l2));border:0;box-shadow:0 0 0 5px rgba(94,92,230,.16)}
-.timeline li.end::after{display:none}
+.timeline li::after{content:"";position:absolute;left:5.5px;top:22px;bottom:-4px;width:2px;background:linear-gradient(180deg,var(--g700),var(--g300));opacity:1}
+.timeline li:last-child{padding-bottom:0}
+.timeline li.end::before{width:19px;height:19px;left:-3px;top:2px;background:linear-gradient(135deg,var(--l1),var(--l2));border:0;box-shadow:0 0 0 5px rgba(0,0,0,.08)}
+.timeline li:last-child::after{display:none}
 .timeline time{display:block;font-size:13px;color:var(--g500);margin-bottom:2px}
 .timeline h4{font-size:17px;font-weight:600;color:var(--black);letter-spacing:-.01em}
 .timeline p{color:var(--g600);font-size:15px;margin-top:2px}
@@ -182,7 +189,7 @@ p b{font-weight:600;color:var(--g900)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .tile{position:relative;text-align:left;background:#fff;border:1px solid var(--g200);border-radius:24px;padding:26px 26px 24px;display:flex;flex-direction:column;min-height:250px;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .3s}
 .tile.wide{grid-column:span 2}
-.tile.feat{background:linear-gradient(145deg,#efeff2,#dedee4);border-color:var(--g300)}
+.tile.feat{background:linear-gradient(145deg,#fafafa,#e8e8ed);border-color:var(--g300)}
 .tile:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(0,0,0,.12)}
 .tile .no{font-size:13px;color:var(--g500);margin-bottom:auto;padding-bottom:30px}
 .tile h3{font-size:22px;letter-spacing:-.015em;margin-bottom:8px}
@@ -195,8 +202,13 @@ p b{font-weight:600;color:var(--g900)}
 .tile:hover .plus{transform:rotate(90deg);background:var(--black);color:#fff}
 .tile.feat:hover .plus{background:var(--black);color:#fff}
 
-.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.skill-grid .panel h4{margin-bottom:16px}
+.skill-rows{border-top:1px solid var(--g300)}
+.skill-row{display:grid;grid-template-columns:minmax(220px,.8fr) 2fr;gap:28px;align-items:center;padding:24px 0;border-bottom:1px solid var(--g200)}
+.sr-h h4{font-size:21px;font-weight:600;color:var(--black);letter-spacing:-.02em;margin-bottom:4px}
+.sr-h p{font-size:14.5px;color:var(--g600);line-height:1.45}
+.tool-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:12px;margin-bottom:26px}
+.tool{display:flex;align-items:center;justify-content:center;text-align:center;padding:16px 8px;border-radius:16px;background:var(--g100);color:var(--g900);font-size:14.5px;font-weight:500;transition:background .3s var(--ease),transform .3s var(--ease)}
+.tool:hover{background:var(--g200);transform:translateY(-2px)}
 .tools{margin-top:36px;padding-top:30px;border-top:1px solid var(--g200)}
 .tools h4{font-size:17px;color:var(--black);margin-bottom:16px}
 
@@ -209,7 +221,7 @@ p b{font-weight:600;color:var(--g900)}
 .brandmark{display:flex;align-items:center;justify-content:center;height:44px;padding:0 34px;color:#fff;font-weight:600;font-size:21px;letter-spacing:-.02em;white-space:nowrap}
 .brandmark img{height:34px;width:auto;max-width:150px;object-fit:contain;filter:brightness(0) invert(1);opacity:.92}
 @keyframes slide{to{transform:translateX(-50%)}}
-.certs{background:#fff;padding:70px 0 140px}
+.certs{background:var(--paper);padding:70px 0 140px}
 .cert-list{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
 .cert{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:20px 0;border-top:1px solid var(--g200);text-align:left;width:100%;align-items:baseline;cursor:default}
 .cert h4{font-size:16.5px;font-weight:500;color:var(--black);letter-spacing:-.01em}
@@ -233,7 +245,7 @@ p b{font-weight:600;color:var(--g900)}
 .card.wide .ci{margin:0}
 .card.wide .acts{margin:0}
 .sec#contact{padding-bottom:140px}
-footer{position:relative;z-index:7;background:#fff;border-radius:var(--r) var(--r) 0 0;margin-top:calc(var(--r) * -1);padding:calc(56px + var(--r)) 0 44px}
+footer{position:relative;z-index:7;background:var(--paper);border-radius:var(--r) var(--r) 0 0;margin-top:calc(var(--r) * -1);padding:calc(56px + var(--r)) 0 44px}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;color:var(--g500);font-size:14px}
 .social{display:flex;gap:10px}
 .social a{width:40px;height:40px;border-radius:50%;border:1px solid var(--g300);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--g700);transition:all .3s var(--ease)}
@@ -263,7 +275,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   .role-block{grid-template-columns:1fr;gap:20px}
   .co{position:static}
   .grid{grid-template-columns:1fr 1fr}
-  .skill-grid{grid-template-columns:1fr 1fr}
+  .tool-grid{grid-template-columns:repeat(4,1fr)}
+  .skill-row{grid-template-columns:1fr;gap:14px}
   .stats{grid-template-columns:1fr 1fr}
   .press-grid{grid-template-columns:repeat(3,1fr)}
   .stat:nth-child(3){padding-left:0;border-left:0}
@@ -282,16 +295,18 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   .callout{grid-template-columns:1fr;padding:22px}
   .press-grid{grid-template-columns:1fr 1fr}
   .press-tile{padding:24px}
-  .grid,.skill-grid,.cert-list,.cards,.edu-grid{grid-template-columns:1fr}
+  .grid,.cert-list,.cards,.edu-grid{grid-template-columns:1fr}
+  .tool-grid{grid-template-columns:1fr 1fr 1fr}
   .school{grid-template-columns:1fr}.school time{grid-row:auto;grid-column:1}
   .tile.wide{grid-column:auto}
-  .item{grid-template-columns:44px 1fr;gap:14px}
-  .item .ic{width:44px;height:44px}
+  .item{grid-template-columns:46px 1fr;gap:14px}
+  .item .ic{width:46px;height:46px;font-size:22px;border-radius:13px}
   .dlg{padding:30px 24px}
   .banner{height:180px}
   .brandmark{padding:0 22px;font-size:18px}
   .stat{padding-right:12px}
   .stat+.stat{padding-left:16px}
+  .stat:nth-child(3){padding-left:0;border-left:0}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -299,6 +314,56 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   .reveal,.hero .in{opacity:1;transform:none;filter:none}
   .track-m{animation:none}
 }
+
+.hero h1{font-weight:700;letter-spacing:-.045em}
+h2{font-weight:700;letter-spacing:-.04em}
+.btn{font-weight:600}
+.tile:hover{border-color:#000}
+.tool{background:#000;color:#fff}
+.tool:hover{background:#1d1d1f}
+
+h2,.dark h2{color:var(--black);font-weight:700}
+.dark h2{color:#fff}
+.sec-head h2::after{background:var(--black)}
+.dark .sec-head h2::after{background:#fff}
+.role{color:#d2d2d7}
+h3,.item h4,.timeline h4,.cert h4,.tile h3,.sr-h h4,.sub-h,.panel h4{font-weight:700}
+.stat b{font-weight:700}
+
+body,button,input,textarea{font-family:Arial,Helvetica,sans-serif}
+h1,h2,h3,h4,h5,.brand,.stat b,.sub-h,.sr-h h4,.panel h4,.item h4,.timeline h4,.cert h4,.tile h3,.press-tile h3,.course h5,.co h3{font-family:'Times New Roman',Times,serif;letter-spacing:0}
+h1,h2{letter-spacing:-.01em}
+.brand{font-size:19px}
+.co h3{font-size:21px}
+.item h4{font-size:17px}
+.sub-h{font-size:17px}
+.sub-h::before,.panel h4::before{height:16px}
+.panel h4,.sr-h h4{font-size:19px}
+.tile h3{font-size:20px}
+.tile.feat h3{font-size:22px}
+.press-tile h3{font-size:21px}
+.timeline h4{font-size:16px}
+.cert h4{font-size:16px}
+.course h5{font-size:13px;text-transform:none;letter-spacing:.01em;color:var(--g700)}
+.co>p:not(.t){font-style:italic}
+.co .when{font-style:italic}
+
+.eyebrow,.tag{font-family:'Times New Roman',Times,serif;font-size:19px;font-weight:700;letter-spacing:0;padding:4px 16px}
+.brand{font-size:27px;font-weight:700}
+.co h3{font-size:19px}
+.item h4{font-size:15.5px}
+.sub-h{font-size:15.5px}
+.sub-h::before,.panel h4::before{height:14px}
+.panel h4,.sr-h h4{font-size:17px}
+.tile h3{font-size:18px}
+.tile.feat h3{font-size:20px}
+.press-tile h3{font-size:19px}
+.timeline h4,.cert h4{font-size:15px}
+.course h5{font-size:12.5px}
+.open{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:#d2d2d7;border:1px solid rgba(255,255,255,.28);border-radius:99px;padding:6px 15px;margin:-8px 0 22px}
+.open::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff}
+.open-row{display:flex;flex-wrap:wrap;gap:10px;margin:-8px 0 22px}
+.open-row .open{margin:0}
 </style>
 </head>
 <body>
@@ -325,9 +390,10 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
       <div>
         <h1 class="in" style="--d:0"><span>Maurya</span><span>Bagi</span></h1>
         <p class="role in" style="--d:1">Digital products and transformation</p>
-        <p class="lead in" style="--d:2">Technical product delivery and app management, from first requirement to release and beyond.</p>
-        <p class="body in" style="--d:3">Experience in <b>technical product delivery, project management and app management</b>, covering a customer app on iOS, Android and web, a field operations app, an admin portal, and the CRMs and integrations connected to them. Works between business teams and engineering, turning operational needs into PRDs, user stories and prioritised backlogs, and supporting sprints, user acceptance testing, release and post release monitoring.</p>
-        <p class="body in" style="--d:3">A computer science background from BITS Pilani supports technical discussions with engineering on integrations and release readiness. Role based platforms, system integrations and market research for expansion planning help <b>products grow across teams and markets</b>, while <b>generative AI tools</b> (Claude, ChatGPT, Perplexity and Gemini) and <b>workflow automation</b> (Zapier) speed up research, documentation and routine operations.</p>
+        <div class="open-row in" style="--d:1"><span class="open">Open to Product, Program, Business Analytics and Consulting roles</span></div>
+        <p class="lead in" style="--d:2">Computer science graduate who turns business needs into apps that teams and customers use.</p>
+        <p class="body in" style="--d:3"><b>Technical product and program management across the full application life cycle</b>, from requirements and feature selection to release and monitoring, covering customer apps, field apps, admin portals, CRMs and integrations.</p>
+        <p class="body in" style="--d:3">Applies <b>generative AI</b> and <b>workflow automation</b> to speed up research, documentation and operations.</p>
         <div class="where in" style="--d:4">
           <span><i data-icon="pin"></i>Dubai, United Arab Emirates</span>
           <span><i data-icon="pin"></i>Bengaluru, Karnataka, India</span>
@@ -341,10 +407,10 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     </div>
 
     <div class="stats in" style="--d:6">
-      <div class="stat"><b><span data-n="80">80</span><sup>%</sup></b><span>Less manual effort on documentation, across 30 workflows</span></div>
+      <div class="stat"><b><span data-n="80">80</span><sup>%</sup></b><span>Less documentation effort across 30 workflows</span></div>
       <div class="stat"><b><span data-n="5">5</span><sup>min</sup></b><span>To report to leadership, down from 48 hours</span></div>
-      <div class="stat"><b><span data-n="150">150</span><sup>+</sup></b><span>Leads a month reaching the CRM with no manual entry</span></div>
-      <div class="stat"><b><span data-n="15">15</span><sup>%</sup></b><span>Higher engagement within six weeks of an A/B test</span></div>
+      <div class="stat"><b><span data-n="150">150</span><sup>+</sup></b><span>Leads a month captured with no manual entry</span></div>
+      <div class="stat"><b><span data-n="15">15</span><sup>%</sup></b><span>Higher engagement from one A/B test</span></div>
     </div>
   </div>
 </header>
@@ -354,38 +420,26 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     <div class="sec-head reveal">
       <p class="eyebrow">Experience</p>
       <h2>Professional experience.</h2>
-      <p class="lede">Three roles in Dubai, followed by education and languages.</p>
+      <p class="lede">Work experience has been at First Response Healthcare and ECS, with the current career break spent building Fennl.</p>
     </div>
 
     <article class="role-block reveal">
       <div class="co">
-        <span class="logo" data-logo="frh" data-mono="FR"></span>
-        <h3>First Response Healthcare</h3>
-        <p>Dubai, United Arab Emirates</p>
-        <p class="t">Program Executive</p>
-        <p class="when">September 2025 to March 2026</p>
+        <span class="logo" data-logo="fennl" data-mono="FN"></span>
+        <h3>Fennl</h3>
+        <p>Dubai and Bengaluru</p>
+        <p class="t">Career Break, Freelance Product Work</p>
+        <p class="when">Apr 2026 - Present</p>
       </div>
       <div>
-        <p class="intro">Responsible for the product backlog and sprint delivery across the company's customer, field and admin platforms, working alongside one backend developer, two mobile developers, a DevOps engineer and a UI/UX engineer. Supported sprint prioritisation, release sign off and post release monitoring.</p>
+        <p class="intro">Planning and building Fennl with a team of friends, applying product management skills to take the app from idea to build.</p>
         <div class="items">
-          <div class="item"><span class="ic" data-ic="drect"><i data-icon="file"></i></span>
-            <div><h4>Drect, Customer App</h4><p>Customer app on iOS, Android and web for booking, in app chat, reports and invoices. Prepared the <b>PRD and user stories</b> for each customer journey, groomed and prioritised the backlog every sprint, and supported each release through <b>user acceptance testing</b>, with Sentry used to monitor production issues.</p>
-            <div class="chips"><span class="chip">PRD</span><span class="chip">User Stories</span><span class="chip">Backlog Grooming</span><span class="chip">Sprint Planning</span><span class="chip">UAT</span><span class="chip">Sentry</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="pin"></i></span>
-            <div><h4>Live Arrival Tracking and Feature Prioritisation</h4><p>Customers waiting at home commonly ask where the team is and when it will arrive. <b>Live arrival tracking</b> answers both through visit status, team location on a map and an estimated arrival time, similar to ride hailing apps. The feature was prioritised with <b>MoSCoW and RICE</b> based on customer impact and reach, and supported by Riyadh competitor research, which showed that real time team tracking was missing among providers.</p>
-            <div class="chips"><span class="chip">Customer Insight</span><span class="chip">Feature Prioritisation</span><span class="chip">MoSCoW</span><span class="chip">RICE</span><span class="chip">Competitor Gap Analysis</span></div></div></div>
-          <div class="item"><span class="ic" data-ic="teamfrh"><i data-icon="file"></i></span>
-            <div><h4>TeamFRH, Field Operations App</h4><p>Field app that brings customer details, appointments and visit location into a single view, reducing the need to switch between systems. <b>Role based access control</b> limits each user to the screens their role needs. A visit begins only after every assigned team member accepts it, and each stage is timestamped to give a <b>reliable record</b> of the visit.</p>
-            <div class="chips"><span class="chip">Role Based Access Control</span><span class="chip">Workflow Design</span><span class="chip">User Stories</span><span class="chip">Acceptance Criteria</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="browser"></i></span>
-            <div><h4>Admin Web Portal</h4><p>Back office web portal built on Django for the operations team: booking management, team assignment, data export and service catalogue sync with the customer app. A confirmed booking and team assignment sends an automatic <b>driver notification with a direct maps link</b>, and each booking opens a dedicated chat group. Requirements were documented through functional specifications and Figma flows for the backend developer.</p>
-            <div class="chips"><span class="chip">Functional Specifications</span><span class="chip">Dispatch Workflow</span><span class="chip">Django</span><span class="chip">Figma</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="globe"></i></span>
+            <div><h4>Fennl, Surplus Food App</h4><p>App that plans to sell surplus restaurant food at a reduced price to cut food waste, aimed at a student audience. <b>Geofencing</b> shows students offers nearby, and order history personalises the offers they see.</p>
+            <div class="chips"><span class="chip">Product Planning</span><span class="chip">Geofencing</span><span class="chip">Personalisation</span><span class="chip">Food Waste</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="chart"></i></span>
-            <div><h4>KPI and MIS Reporting</h4><p>Management dashboard built around <b>five core metrics</b>, each with a defined calculation so that reporting stays consistent across teams. Developed in Excel and Tableau and presented to senior leadership. The dashboard replaced a manual reporting cycle and reduced operating cost by approximately <b>AED 24,000 a year</b>.</p>
-            <div class="chips"><span class="chip">KPI Framework</span><span class="chip">MIS</span><span class="chip">Tableau</span><span class="chip">Excel</span><span class="chip">Stakeholder Reporting</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="flow"></i></span>
-            <div><h4>Lead Capture and Experimentation</h4><p>Call and chat leads from Ziwo and Respond.io are routed into the CRM through <b>Zapier automations</b>, with an outcome tag on every lead to support marketing and budget analysis. A structured <b>A/B test</b> across the app's core flows led to a product recommendation.</p>
-            <div class="chips"><span class="chip">Zapier</span><span class="chip">Workflow Automation</span><span class="chip">Lead Tagging</span><span class="chip">A/B Testing</span></div></div></div>
+            <div><h4>Recommendation Models</h4><p>AI models in development that <b>recommend products</b>, learn user demand from statistics and match supply to market demand.</p>
+            <div class="chips"><span class="chip">AI Models</span><span class="chip">Demand Analysis</span><span class="chip">Supply Matching</span></div></div></div>
         </div>
       </div>
     </article>
@@ -395,27 +449,60 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         <span class="logo" data-logo="frh" data-mono="FR"></span>
         <h3>First Response Healthcare</h3>
         <p>Dubai, United Arab Emirates</p>
-        <p class="t">Digital Transformation and Operations Intern (Junior Product Manager)</p>
-        <p class="when">January 2025 to July 2025</p>
+        <p class="t">Program Executive</p>
+        <p class="when">Sept 2025 - Mar 2026</p>
       </div>
       <div>
-        <p class="intro">Joined in operations and progressed into <b>Junior Product Manager</b> responsibilities across CRM, research and integration work, covering requirements, screen and dashboard design, and coordination of the developers and vendors who built to specification.</p>
+        <p class="intro">Owned the product backlog and sprint delivery across the customer, field and admin platforms, working with one backend developer, two mobile developers, a DevOps engineer and a UI/UX engineer. Drect, TeamFRH and the admin portal, run day to day by operations and the call centre, were built as one connected system.</p>
+        <div class="items">
+          <div class="item"><span class="ic" data-ic="drect"><i data-icon="file"></i></span>
+            <div><h4>Drect, Customer App</h4><p>Customer app on iOS, Android and web. Customers book appointments, chat in app with the doctor, view and call the doctor they booked with, and open their medical reports and invoices. Prepared the <b>PRD and user stories</b> for each journey, groomed and prioritised the backlog every sprint, and supported each release through <b>user acceptance testing</b>, with Sentry monitoring production issues.</p>
+            <div class="chips"><span class="chip">PRD</span><span class="chip">User Stories</span><span class="chip">Backlog Grooming</span><span class="chip">Sprint Planning</span><span class="chip">UAT</span><span class="chip">Sentry</span></div></div></div>
+          <div class="item"><span class="ic" data-ic="teamfrh"><i data-icon="file"></i></span>
+            <div><h4>TeamFRH, Field Operations App</h4><p>Field app that brings customer details, appointments and visit location into a single view. <b>Role based access control</b> limits each user to the screens their role needs. A visit begins only after every assigned team member accepts it, and each stage is timestamped to give a reliable record of the visit.</p>
+            <div class="chips"><span class="chip">Role Based Access Control</span><span class="chip">Workflow Design</span><span class="chip">User Stories</span><span class="chip">Acceptance Criteria</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="users"></i></span>
+            <div><h4>Business Development App</h4><p>Business development CRM built on <b>HubSpot</b>, with a <b>personalised mobile application</b> built for the sales team. Leads and corporate contacts are tagged, managers have a day and week meeting planner, and the app adds location tagging so field visits can be followed. Requirements were written and the build coordinated with the development team.</p>
+            <div class="chips"><span class="chip">CRM Design</span><span class="chip">HubSpot</span><span class="chip">Mobile Application</span><span class="chip">Geolocation Requirement</span><span class="chip">Vendor Management</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="browser"></i></span>
+            <div><h4>Admin Web Portal</h4><p>Back office web portal built on Django for operations: booking management, team assignment, data export and service catalogue sync with the customer app. A confirmed booking sends an automatic <b>driver notification with a direct maps link</b> and opens a dedicated chat group. Requirements were documented as functional specifications and Figma flows for the backend developer.</p>
+            <div class="chips"><span class="chip">Functional Specifications</span><span class="chip">Dispatch Workflow</span><span class="chip">Django</span><span class="chip">Figma</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="pin"></i></span>
+            <div><h4>Feature Prioritisation</h4><p>Features were selected with <b>MoSCoW and RICE</b> on customer impact and reach. <b>Live arrival tracking</b> ranked first: customers waiting at home want to know where the team is and when it will arrive, so live status, team location on a map and an estimated arrival time were built, backed by Riyadh competitor research showing the gap among providers.</p>
+            <div class="chips"><span class="chip">Customer Insight</span><span class="chip">Feature Prioritisation</span><span class="chip">MoSCoW</span><span class="chip">RICE</span><span class="chip">Competitor Gap Analysis</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="chart"></i></span>
+            <div><h4>KPI and MIS Reporting</h4><p>Management dashboard built around <b>five core metrics</b>, each with a defined calculation so reporting stays consistent across teams. Developed in Excel and Tableau and presented to senior leadership. It replaced a manual reporting cycle and reduces operating cost by about <b>AED 24,000 a year</b>.</p>
+            <div class="chips"><span class="chip">KPI Framework</span><span class="chip">MIS</span><span class="chip">Tableau</span><span class="chip">Excel</span><span class="chip">Stakeholder Reporting</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="flow"></i></span>
+            <div><h4>Lead Capture and Experimentation</h4><p>Call and chat leads from Ziwo and Respond.io are routed into the CRM through <b>Zapier automations</b>, with an outcome tag on every lead to support marketing and budget analysis. A structured <b>A/B test</b> across the core app flows led to a product recommendation.</p>
+            <div class="chips"><span class="chip">Zapier</span><span class="chip">Workflow Automation</span><span class="chip">Lead Tagging</span><span class="chip">A/B Testing</span></div></div></div>
+          <div class="item"><span class="ic"><i data-icon="link"></i></span>
+            <div><h4>Integrations</h4><p>Evaluated <b>video consultation providers</b> on integration effort, user experience, encryption and DHA compliance, and supported the mobile developer on the API integration covering secure data handling, appointment tracking and automatic prescriptions. Also coordinated <b>GPS fleet tracking with MyLocator</b>: feature review, driver and vehicle profile mapping, and a sync with the booking system for real time team visibility.</p>
+            <div class="chips"><span class="chip">API Evaluation</span><span class="chip">GPS Fleet Tracking</span><span class="chip">Compliance</span><span class="chip">Vendor Coordination</span></div></div></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="role-block reveal">
+      <div class="co">
+        <span class="logo" data-logo="frh" data-mono="FR"></span>
+        <h3>First Response Healthcare</h3>
+        <p>Dubai, United Arab Emirates</p>
+        <p class="t">Digital Transformation and Operations Intern</p>
+        <p class="when">Jan 2025 - Jul 2025</p>
+      </div>
+      <div>
+        <p class="intro">Joined in operations and progressed into product responsibilities across CRM and research, covering requirements, screen and dashboard design, and coordination of the developers and vendors who built to specification.</p>
         <div class="items">
           <div class="item"><span class="ic"><i data-icon="users"></i></span>
-            <div><h4>Call Centre CRM on Zoho</h4><p>Designed the lead pipeline and dashboard for the call centre and wrote the requirements for the development team. Every inbound channel, including ads, calls, referrals, WhatsApp and Instagram chats, appears as a card on a board with defined lead statuses: converted, pending, follow up later, unconverted and irrelevant. A <b>phone number lookup</b> shows earlier bookings so that repeat callers are served faster.</p>
+            <div><h4>Call Centre CRM on Zoho</h4><p>Designed the lead pipeline and dashboard and wrote the requirements for the development team. Every inbound channel, from ads and calls to WhatsApp and Instagram chats, appears as a card on a board with defined lead statuses. A <b>phone number lookup</b> shows earlier bookings so repeat callers are served faster.</p>
             <div class="chips"><span class="chip">CRM Design</span><span class="chip">Lead Pipeline</span><span class="chip">Dashboards</span><span class="chip">Requirements</span><span class="chip">Team Coordination</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="users"></i></span>
-            <div><h4>Business Development CRM on HubSpot</h4><p>Business development CRM built on <b>HubSpot</b>, with a <b>personalised mobile application</b> developed for the same. Leads and corporate contacts are tagged, managers have a day and week meeting planner, and the mobile application adds location tagging so that field visits can be followed. Requirements were written and the build coordinated with the development team.</p>
-            <div class="chips"><span class="chip">CRM Design</span><span class="chip">HubSpot</span><span class="chip">Mobile Application</span><span class="chip">Geolocation Requirement</span><span class="chip">Vendor Management</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="scale"></i></span>
             <div><h4>CRM Selection</h4><p>Compared <b>eight vendors</b> against common criteria in an evaluation matrix to support the platform decision, then documented the customisation requirements for the chosen vendor.</p>
             <div class="chips"><span class="chip">Vendor Evaluation</span><span class="chip">Evaluation Matrix</span><span class="chip">Procurement</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="globe"></i></span>
-            <div><h4>Market Research & Go To Market Strategy</h4><p>Analysed <b>three service verticals</b> and the <b>Riyadh home services market</b>, covering competitor offerings, user experience, pricing models, insurance acceptance and licensing requirements. Documented market gaps such as round the clock availability, insurance integration, real time team tracking and multilingual support. The report informed expansion planning and positioning.</p>
+            <div><h4>Market Research & Go To Market Strategy</h4><p>Analysed <b>three service verticals</b> and the <b>Riyadh home services market</b>, covering competitor offerings, user experience, pricing models, insurance acceptance and licensing requirements. Documented gaps such as round the clock availability, insurance integration and multilingual support. The report informed expansion planning and positioning.</p>
             <div class="chips"><span class="chip">Market Research</span><span class="chip">Competitor Analysis</span><span class="chip">Go To Market Strategy</span><span class="chip">Positioning</span><span class="chip">Regulatory Review</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="link"></i></span>
-            <div><h4>Integrations</h4><p>Evaluated <b>video consultation providers</b> on integration effort, user experience, encryption and DHA compliance, and supported the mobile developer's API integration covering secure data handling, appointment tracking and automatic prescriptions. Also coordinated <b>GPS fleet tracking with MyLocator</b>: feature review with logistics and tech support, driver and vehicle profile mapping, and a sync with the internal booking system for real time team visibility, with alerts and maintenance reminders.</p>
-            <div class="chips"><span class="chip">API Evaluation</span><span class="chip">GPS Fleet Tracking</span><span class="chip">Compliance</span><span class="chip">Vendor Coordination</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="file"></i></span>
             <div><h4>Process Digitisation</h4><p>Documented each workflow as it ran in practice and converted manual records into <b>structured process documentation</b>, with data cleansing to keep the records reliable.</p>
             <div class="chips"><span class="chip">Process Documentation</span><span class="chip">Data Quality</span></div></div></div>
@@ -429,7 +516,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         <h3>ECS Enterprise Change Specialist</h3>
         <p>Dubai, United Arab Emirates</p>
         <p class="t">Digital Transformation Intern</p>
-        <p class="when">June 2023 to August 2023</p>
+        <p class="when">Jun 2023 - Aug 2023</p>
       </div>
       <div>
         <p class="intro">Consulting internship on business process transformation and CRM advisory across client industries, covering current state workflow capture, gap analysis and matching technology options to business needs.</p>
@@ -446,7 +533,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 
     <div class="press-tile reveal">
       <h3>Drect in the Press</h3>
-      <p>Media coverage of the Drect launch in the United Arab Emirates.</p>
+      <p>Coverage of the Drect launch in the UAE.</p>
       <div class="press-grid"><a class="pt" href="https://www.khaleejtimes.com/kt-network/first-response-healthcare-launches-innovative-mobile-app-aiming-to-provide-personalised-medical-care-at-home-in-the-uae" target="_blank" rel="noopener">Khaleej Times<span class="glink">Read article<i data-icon="arrow"></i></span></a><a class="pt" href="https://dayofdubai.com/news/first-response-healthcare-unveils-drect-mobile-app-to-revolutionize-at-home-medical-care-in-the-uae/" target="_blank" rel="noopener">Day of Dubai<span class="glink">Read article<i data-icon="arrow"></i></span></a><a class="pt" href="https://dharab.com/uaes-first-response-healthcare-launches-a-mobile-app-to-provide-personalized-medical-care-at-home/" target="_blank" rel="noopener">DH Arab<span class="glink">Read article<i data-icon="arrow"></i></span></a><a class="pt" href="https://www.zawya.com/en/press-release/companies-news/first-response-healthcare-launches-innovative-mobile-app-aiming-to-provide-personalised-medical-care-at-home-in-the-uae-503086" target="_blank" rel="noopener">Zawya<span class="glink">Read article<i data-icon="arrow"></i></span></a><a class="pt" href="https://www.biztoday.news/2025/05/21/first-response-healthcare-launches-drect-app-to-revolutionize-at-home-healthcare-in-dubai/" target="_blank" rel="noopener">BizToday<span class="glink">Read article<i data-icon="arrow"></i></span></a></div>
     </div>
 
@@ -456,19 +543,22 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         <span class="logo" data-logo="bits" data-mono="BP"></span>
         <h3>BITS Pilani</h3>
         <p class="t">B.E. in Computer Science</p>
-        <p class="when">September 2021 to July 2025</p>
+        <p class="when">Sept 2021 - Jul 2025</p>
       </div>
       <div>
-        <p class="intro">A four year engineering degree, with coursework across computer science, data, AI and management.</p>
+        <p class="intro">A four year engineering degree that pairs computer science fundamentals with data, artificial intelligence and management, the base for product and analytics work.</p>
         <p class="sub-h" style="margin-top:8px">Coursework</p>
-        <div class="chips"><span class="chip">Machine Learning</span><span class="chip">Natural Language Processing</span><span class="chip">Artificial Intelligence</span><span class="chip">Data Science</span><span class="chip">Business Analytics</span><span class="chip">People Analytics</span><span class="chip">Algorithms</span><span class="chip">Data Structures</span><span class="chip">Database Management</span><span class="chip">Cryptography</span><span class="chip">Computer Networks</span><span class="chip">Internet of Things</span><span class="chip">Principles of Management</span></div>
+        <div class="course-grid">
+          <div class="course"><h5>Computer Science</h5><div class="chips"><span class="chip">Algorithms</span><span class="chip">Data Structures</span><span class="chip">Database Management</span><span class="chip">Computer Networks</span><span class="chip">Cryptography</span><span class="chip">Internet of Things</span></div></div>
+          <div class="course"><h5>Data and AI</h5><div class="chips"><span class="chip">Machine Learning</span><span class="chip">Natural Language Processing</span><span class="chip">Artificial Intelligence</span><span class="chip">Data Science</span></div></div>
+          <div class="course"><h5>Business and People</h5><div class="chips"><span class="chip">Business Analytics</span><span class="chip">People Analytics</span><span class="chip">Principles of Management</span></div></div>
+        </div>
         <p class="sub-h">Schooling</p>
         <ol class="timeline">
-          <li><time>2009 to 2015</time><h4>KLES International School</h4><p>Primary School (Grade 1 to 6)</p></li>
-          <li><time>2015 to 2017</time><h4>Bilva Indian School</h4><p>Primary School (Grade 7 to 8)</p></li>
-          <li><time>2017 to 2019</time><h4>The Indian High School, Dubai</h4><p>Secondary School (Grade 9 to 10)</p></li>
-          <li><time>2019 to 2021</time><h4>The Indian High School, Dubai</h4><p>Higher Secondary: Physics, Chemistry, Mathematics and Biology</p></li>
-          <li class="end"><time>2021 to 2025</time><h4>BITS Pilani</h4><p>B.E. in Computer Science</p></li>
+          <li><time>2019 - 2021</time><h4>The Indian High School, Dubai</h4><p>Higher Secondary: Physics, Chemistry, Mathematics and Biology</p></li>
+          <li><time>2017 - 2019</time><h4>The Indian High School, Dubai</h4><p>Secondary School (Grade 9-10)</p></li>
+          <li><time>2015 - 2017</time><h4>Bilva Indian School</h4><p>Primary School (Grade 7-8)</p></li>
+          <li><time>2009 - 2015</time><h4>KLES International School</h4><p>Primary School (Grade 1-6)</p></li>
         </ol>
       </div>
     </article>
@@ -479,7 +569,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         <h3>Languages</h3>
       </div>
       <div>
-        <div class="chips"><span class="chip">English</span><span class="chip">Hindi</span><span class="chip">Kannada</span><span class="chip">Arabic (Basic)</span><span class="chip">German (Learning in Progress, A1 to A2)</span></div>
+        <div class="chips"><span class="chip">English</span><span class="chip">Hindi</span><span class="chip">Kannada</span><span class="chip">Arabic (Basic)</span><span class="chip">German (Learning, A1)</span></div>
       </div>
     </article>
   </div>
@@ -488,8 +578,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 <section class="sec grey" id="projects">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Projects</p>
-      <h2>Selected projects.</h2>
+      <h2>Projects.</h2>
       <p class="lede">Projects from the degree and beyond, from AI and IoT to blockchain. Open any tile for the scope and the role played.</p>
     </div>
     <div class="grid" id="grid"></div>
@@ -501,7 +590,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     <div class="sec-head reveal">
       <p class="eyebrow">Skills</p>
       <h2>Skills and tools.</h2>
-      <p class="lede">Capabilities across product, delivery, data and business, and the tools used to deliver them.</p>
+      <p class="lede">Capabilities first, then the tools behind them.</p>
     </div>
     <div class="skill-grid" id="skillGrid"></div>
   </div>
@@ -528,7 +617,7 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     <div class="sec-head reveal">
       <p class="eyebrow">Contact</p>
       <h2>Get in touch.</h2>
-      <p class="lede">For product, transformation or consulting conversations, email is quickest. Calls and WhatsApp work too.</p>
+      <p class="lede">Email is quickest. Calls and WhatsApp work too.</p>
     </div>
     <div class="cards">
       <div class="card reveal"><span class="ci"><i data-icon="mail"></i></span><small>Email</small><b>mauryabagi@gmail.com</b>
@@ -658,43 +747,43 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   });
 
   var PROJECTS = [
-    { title: "IoT Smart Farming with AWS", period: "August to December 2024", cls: "feat wide", line: "Soil and weather sensors feeding a cloud dashboard that decides when to water.",
+    { title: "IoT Smart Farming with AWS", period: "Aug - Dec 2024", cls: "feat wide", line: "Soil and weather sensors feeding a cloud dashboard that decides when to water.",
       summary: "A complete farming system, from the sensor in the soil to the dashboard on screen. It collects environmental and soil data in real time and starts irrigation automatically when conditions call for it.",
       did: ["Designed the full sensor to cloud pipeline.", "Built monitoring and alerts so that problems surface quickly.", "Added remote control, so irrigation can also be managed from the dashboard."],
       skills: ["IoT", "AWS", "Sensors", "Cloud Dashboards", "Automation"] },
-    { title: "Ink and Insight", full: "Ink and Insight: Document Authenticity Detection", period: "July to December 2024", cls: "feat", role: "Project Lead", line: "An AI web application that reads multi page PDFs and flags handwriting inconsistencies that may point to forgery.",
+    { title: "Ink and Insight", full: "Ink and Insight: Document Authenticity Detection", period: "Jul - Dec 2024", cls: "feat", role: "Project Lead", line: "An AI web application that reads multi page PDFs and flags handwriting inconsistencies that may point to forgery.",
       summary: "Forged documents are hard to catch by eye, especially across many pages. Ink and Insight compares the handwriting throughout a document and flags the passages that do not match.",
       did: ["Led requirements gathering and project planning for the application.", "Translated the business need into technical requirements the team could build against.", "Coordinated delivery from start to finish across natural language processing, deep learning and computer vision."],
       skills: ["Requirements", "Project Planning", "NLP", "Deep Learning", "Computer Vision"] },
-    { title: "Swift Solutions", full: "Swift Solutions: Loan Management System", period: "February to June 2024", line: "A loan platform built around students who need to keep track of repayments.",
+    { title: "Swift Solutions", full: "Swift Solutions: Loan Management System", period: "Feb - Jun 2024", line: "A loan platform built around students who need to keep track of repayments.",
       summary: "Swift Solutions is a loan management platform for everyone, with a special focus on students. It helps borrowers stay on top of what they owe and when.",
       did: ["Users link their bank accounts to follow loans in one place.", "Payment reminders prompt repayment before a date is missed.", "Invoices are generated automatically, which keeps every loan traceable."],
       skills: ["Loan Tracking", "Bank Linking", "Reminders", "Invoicing"] },
-    { title: "Movie Recommendation System", period: "January to June 2024", line: "Suggestions that learn from what people watch and rate.",
+    { title: "Movie Recommendation System", period: "Jan - Jun 2024", line: "Suggestions that learn from what people watch and rate.",
       summary: "A machine learning system that predicts which films a user will enjoy, so that the viewing experience feels personal.",
       did: ["Combined collaborative filtering, content based filtering and hybrid approaches.", "Analysed user behaviour, ratings and movie features to rank the suggestions."],
       skills: ["Machine Learning", "Recommender Systems", "Data Analysis"] },
-    { title: "Photovoltaic Cell Design", full: "Photovoltaic Cell Design and Simulation", period: "January to May 2024", line: "A solar cell redesigned with luminescent materials, modelled in COMSOL.",
+    { title: "Photovoltaic Cell Design", full: "Photovoltaic Cell Design and Simulation", period: "Jan - May 2024", line: "A solar cell redesigned with luminescent materials, modelled in COMSOL.",
       summary: "An advanced photovoltaic cell designed and simulated to raise efficiency and performance.",
       did: ["Added luminescent materials to improve light absorption and energy conversion.", "Modelled and analysed the design in COMSOL Multiphysics, then tuned it for efficiency, with notable improvements."],
       skills: ["COMSOL Multiphysics", "Simulation", "Renewable Energy"] },
-    { title: "Secure E Voting System", period: "January to April 2024", line: "A blockchain voting platform where every vote is anonymous and traceable.",
+    { title: "Secure E Voting System", period: "Jan - Apr 2024", line: "A blockchain voting platform where every vote is anonymous and traceable.",
       summary: "A simulation of a real digital election that guarantees the voter's anonymity, prevents tampering and still leaves a complete audit trail.",
       did: ["Built the platform on a blockchain so that recorded votes cannot be altered.", "Implemented strong encryption and secure authentication.", "Kept an audit trail that can be traced end to end without revealing who voted for whom."],
       skills: ["Blockchain", "Encryption", "Authentication", "Audit Trails"] },
-    { title: "Sign Language Recognition", full: "Sign Language Recognition System", period: "August to December 2023", line: "Real time gesture recognition that turns sign language into readable text.",
+    { title: "Sign Language Recognition", full: "Sign Language Recognition System", period: "Aug - Dec 2023", line: "Real time gesture recognition that turns sign language into readable text.",
       summary: "A system that translates sign language into readable output as it happens, to make communication between deaf and hearing people easier.",
       did: ["Focused on three things: accuracy, real time performance and ease of use."],
       skills: ["Gesture Recognition", "Machine Learning", "Real Time Systems"] },
-    { title: "AI Driven Energy Efficiency", full: "AI Driven Energy Efficiency: Optimising Consumption and Sustainability", period: "July to December 2023", line: "Lighting and air conditioning that adjust to who is in the room.",
+    { title: "AI Driven Energy Efficiency", full: "AI Driven Energy Efficiency: Optimising Consumption and Sustainability", period: "Jul - Dec 2023", line: "Lighting and air conditioning that adjust to who is in the room.",
       summary: "Research into automation that cuts energy use by responding to occupancy and environmental conditions instead of running on fixed settings.",
       did: ["Designed AI driven automation for lighting and air conditioning.", "Proposed intelligent control models to reduce energy consumption and improve sustainability in changing environments."],
       skills: ["AI", "Automation", "Sustainability", "Research"] },
-    { title: "Library Management System", period: "January to April 2023", line: "A database to move a library off cards and paper.",
+    { title: "Library Management System", period: "Jan - Apr 2023", line: "A database to move a library off cards and paper.",
       summary: "A database that organises a library. It suits any library, and works best for a large lending library with books, magazines, journals, videos and audio books.",
       did: ["Replaces a card for every item and every patron.", "Brings paper employee records into one system, from hiring paperwork to payroll and salary."],
       skills: ["Database Design", "Records Management"] },
-    { title: "Car Rental Management System", period: "September to December 2022", cls: "wide", line: "Two portals, one for customers and one for the people running the fleet.",
+    { title: "Car Rental Management System", period: "Sept - Dec 2022", cls: "wide", line: "Two portals, one for customers and one for the people running the fleet.",
       summary: "A rental platform where customers browse and book, and management controls vehicle availability, bookings and fleet records.",
       did: ["Gathered the requirements and defined the workflows for both portals.", "Supported development of role based access, so that each user sees and changes only what they should."],
       skills: ["Requirements", "Workflow Design", "Role Based Access"] }
@@ -718,17 +807,23 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   });
 
   var SKILLS = [
-    ["Product", ["PRD Writing", "User Stories", "Acceptance Criteria", "Backlog Grooming", "Prioritisation", "MoSCoW", "RICE Framework", "Workflow Design", "A/B Testing", "Market Research", "Go To Market Strategy"], "Turning a business problem into a clear, prioritised build."],
-    ["Delivery", ["Sprint Planning", "Release Management", "Vendor Evaluation", "Stakeholder Coordination", "User Acceptance Testing", "Team Coordination"], "Keeping engineering, operations and leadership on one plan."],
-    ["Data", ["KPI Design", "Dashboards", "SQL", "Python", "Data Quality", "Analysis"], "Choosing the right measures and showing them clearly."],
-    ["Business", ["Business Cases", "Process Documentation", "Gap Analysis", "CRM Design", "Competitor Analysis"], "Understanding how a business runs before changing it."],
-    ["AI and Automation", ["Generative AI", "Workflow Automation", "Lead Automation", "Prompt Writing"], "Using AI and automation to remove repeat work."],
-    ["Tools", ["Jira", "Figma", "Sentry", "Zapier", "Zoho", "HubSpot", "Salesforce", "Tableau", "Power BI", "Excel", "Microsoft 365", "AWS", "MongoDB", "Django", "Atlassian", "ClickUp", "Claude", "ChatGPT", "Perplexity", "Gemini"], "Used day to day."]
+    ["Product and Program Management", "Technical product and program management, application life cycle and feature selection.", ["PRD Writing", "User Stories", "Acceptance Criteria", "Backlog Grooming", "Prioritisation", "MoSCoW", "RICE Framework", "Workflow Design", "A/B Testing", "Market Research", "Go To Market Strategy"]],
+    ["Delivery", "Keeping engineering, operations and leadership on one plan.", ["Sprint Planning", "Release Management", "Vendor Evaluation", "Stakeholder Coordination", "User Acceptance Testing", "Team Coordination"]],
+    ["Data", "Choosing the right measures and showing them clearly.", ["KPI Design", "Dashboards", "SQL", "Python", "Data Quality", "Analysis"]],
+    ["Business", "Understanding how a business runs before changing it.", ["Business Cases", "Process Documentation", "Gap Analysis", "CRM Design", "Competitor Analysis"]],
+    ["AI and Automation", "Removing repeat work with AI and workflows.", ["Generative AI", "Workflow Automation", "Lead Automation", "Prompt Writing"]]
   ];
-  $('#skillGrid').innerHTML = SKILLS.map(function (g, i) {
-    return '<div class="panel reveal" style="--d:' + (i % 3) + '"><h4>' + g[0] + '</h4><p>' + g[2] + '</p><div class="chips">' + g[1].map(function (s) { return '<span class="chip">' + s + '</span>'; }).join('') + '</div></div>';
-  }).join('');
-
+  var TOOLS = [
+    ["Platforms", ["Jira", "Atlassian", "Figma", "Sentry", "Zapier", "Zoho", "HubSpot", "Salesforce", "ClickUp", "Tableau", "Power BI", "Excel", "Microsoft 365", "AWS", "MongoDB", "Django"]],
+    ["AI Assistants", ["Claude", "ChatGPT", "Perplexity", "Gemini"]]
+  ];
+  $('#skillGrid').innerHTML =
+    '<div class="skill-rows">' + SKILLS.map(function (g, i) {
+      return '<div class="skill-row reveal" style="--d:' + (i % 3) + '"><div class="sr-h"><h4>' + g[0] + '</h4><p>' + g[1] + '</p></div><div class="chips">' + g[2].map(function (s) { return '<span class="chip">' + s + '</span>'; }).join('') + '</div></div>';
+    }).join('') + '</div>' +
+    '<div class="tools reveal">' + TOOLS.map(function (g) {
+      return '<p class="sub-h">' + g[0] + '</p><div class="tool-grid">' + g[1].map(function (t) { return '<span class="tool">' + t + '</span>'; }).join('') + '</div>';
+    }).join('') + '</div>';
 
   var CERTS = [
     { name: "McKinsey Forward Program", issuer: "McKinsey & Company", date: "June 2026", file: "mckinsey" },
@@ -739,9 +834,9 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     { name: "Data Analysis", issuer: "Microsoft", date: "May 2026", file: "microsoft-data-analysis" },
     { name: "Generative AI Mastermind", issuer: "Outskill", date: "May 2026", file: "outskill-genai" },
     { name: "Google Analytics Certification", issuer: "Google", date: "February 2026", file: "google-analytics" },
-    { name: "Management Consulting Job Simulation", issuer: "PwC, through Forage", date: "October 2026", file: "pwc-forage" },
-    { name: "Strategic Consulting Job Simulation", issuer: "Boston Consulting Group, through Forage", file: "bcg-forage" },
-    { name: "Project Manager Job Simulation", issuer: "Siemens Mobility, through Forage", date: "In progress", wip: true }
+    { name: "Management Consulting Job Simulation", issuer: "PwC, Forage", date: "October 2026", file: "pwc-forage" },
+    { name: "Strategic Consulting Job Simulation", issuer: "Boston Consulting Group, Forage", file: "bcg-forage" },
+    { name: "Project Manager Job Simulation", issuer: "Siemens Mobility, Forage", date: "In progress", wip: true }
   ];
   var certList = $('#certList');
   certList.innerHTML = CERTS.map(function (c, i) {
