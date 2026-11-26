@@ -364,6 +364,23 @@ h1,h2{letter-spacing:-.01em}
 .open::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff}
 .open-row{display:flex;flex-wrap:wrap;gap:10px;margin:-8px 0 22px}
 .open-row .open{margin:0}
+
+h1,h2,h3,h4,h5,.brand,.stat b,.sub-h,.sr-h h4,.panel h4,.item h4,.timeline h4,.cert h4,.tile h3,.press-tile h3,.course h5,.co h3{font-family:Arial,Helvetica,sans-serif}
+h1{letter-spacing:-.04em}
+h2{letter-spacing:-.03em}
+.co h3,.item h4,.sub-h,.panel h4,.sr-h h4,.tile h3,.press-tile h3,.timeline h4,.cert h4{letter-spacing:-.01em}
+.eyebrow,.tag{font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:.01em;padding:5px 14px}
+.brand{font-size:23px}
+.co h3{font-size:20px}
+.item h4{font-size:16.5px}
+.sub-h{font-size:16px}
+.panel h4,.sr-h h4{font-size:18px}
+.tile h3{font-size:19px}
+.tile.feat h3{font-size:21px}
+.press-tile h3{font-size:20px}
+.timeline h4,.cert h4{font-size:15.5px}
+.course h5{font-size:13px}
+.timeline time,.cert time,.cert p,.dlg .meta,.tile .no{font-style:italic}
 </style>
 </head>
 <body>
@@ -420,7 +437,7 @@ h1,h2{letter-spacing:-.01em}
     <div class="sec-head reveal">
       <p class="eyebrow">Experience</p>
       <h2>Professional experience.</h2>
-      <p class="lede">Work experience has been at First Response Healthcare and ECS, with the current career break spent building Fennl.</p>
+      <p class="lede">Work experience has been at First Response Healthcare and ECS, followed by independent product work on Fennl.</p>
     </div>
 
     <article class="role-block reveal">
@@ -428,19 +445,12 @@ h1,h2{letter-spacing:-.01em}
         <span class="logo" data-logo="fennl" data-mono="FN"></span>
         <h3>Fennl</h3>
         <p>Dubai and Bengaluru</p>
-        <p class="t">Career Break, Freelance Product Work</p>
+        <p class="t">Product Management, Independent</p>
         <p class="when">Apr 2026 - Present</p>
       </div>
       <div>
-        <p class="intro">Planning and building Fennl with a team of friends, applying product management skills to take the app from idea to build.</p>
-        <div class="items">
-          <div class="item"><span class="ic"><i data-icon="globe"></i></span>
-            <div><h4>Fennl, Surplus Food App</h4><p>App that plans to sell surplus restaurant food at a reduced price to cut food waste, aimed at a student audience. <b>Geofencing</b> shows students offers nearby, and order history personalises the offers they see.</p>
-            <div class="chips"><span class="chip">Product Planning</span><span class="chip">Geofencing</span><span class="chip">Personalisation</span><span class="chip">Food Waste</span></div></div></div>
-          <div class="item"><span class="ic"><i data-icon="chart"></i></span>
-            <div><h4>Recommendation Models</h4><p>AI models in development that <b>recommend products</b>, learn user demand from statistics and match supply to market demand.</p>
-            <div class="chips"><span class="chip">AI Models</span><span class="chip">Demand Analysis</span><span class="chip">Supply Matching</span></div></div></div>
-        </div>
+        <p class="intro">Planning and building a food waste app for students with a team of friends, applying product management from requirements to build. Surplus restaurant food is offered at a reduced price, <b>geofencing</b> shows nearby offers, and order history personalises what each student sees. <b>AI models</b> in development recommend products, learn demand from statistics and match supply to market demand.</p>
+        <div class="chips" style="margin-top:6px"><span class="chip">Product Planning</span><span class="chip">Geofencing</span><span class="chip">Personalisation</span><span class="chip">Recommendation Models</span></div>
       </div>
     </article>
 
@@ -456,25 +466,25 @@ h1,h2{letter-spacing:-.01em}
         <p class="intro">Owned the product backlog and sprint delivery across the customer, field and admin platforms, working with one backend developer, two mobile developers, a DevOps engineer and a UI/UX engineer. Drect, TeamFRH and the admin portal, run day to day by operations and the call centre, were built as one connected system.</p>
         <div class="items">
           <div class="item"><span class="ic" data-ic="drect"><i data-icon="file"></i></span>
-            <div><h4>Drect, Customer App</h4><p>Customer app on iOS, Android and web. Customers book appointments, chat in app with the doctor, view and call the doctor they booked with, and open their medical reports and invoices. Prepared the <b>PRD and user stories</b> for each journey, groomed and prioritised the backlog every sprint, and supported each release through <b>user acceptance testing</b>, with Sentry monitoring production issues.</p>
-            <div class="chips"><span class="chip">PRD</span><span class="chip">User Stories</span><span class="chip">Backlog Grooming</span><span class="chip">Sprint Planning</span><span class="chip">UAT</span><span class="chip">Sentry</span></div></div></div>
+            <div><h4>Drect, Customer App</h4><p>Customer app on iOS, Android and web. Customers book appointments, chat in app with the doctor, view and call the doctor they booked with, and open their medical reports and invoices. Wrote the <b>PRD and user stories</b> for each journey, owned and prioritised the backlog every sprint, and took each release through <b>user acceptance testing</b> and sign off, with Sentry monitoring production issues.</p>
+            <div class="chips"><span class="chip">PRD</span><span class="chip">User Stories</span><span class="chip">Sprint Planning</span><span class="chip">UAT</span></div></div></div>
           <div class="item"><span class="ic" data-ic="teamfrh"><i data-icon="file"></i></span>
-            <div><h4>TeamFRH, Field Operations App</h4><p>Field app that brings customer details, appointments and visit location into a single view. <b>Role based access control</b> limits each user to the screens their role needs. A visit begins only after every assigned team member accepts it, and each stage is timestamped to give a reliable record of the visit.</p>
-            <div class="chips"><span class="chip">Role Based Access Control</span><span class="chip">Workflow Design</span><span class="chip">User Stories</span><span class="chip">Acceptance Criteria</span></div></div></div>
+            <div><h4>TeamFRH, Field Operations App</h4><p>Field app that brings customer details, appointments and visit location into a single view. <b>Role based access control</b> limits each user to the screens their role needs. A visit begins only after every assigned team member accepts it, and each stage is timestamped to keep a clear record of the visit.</p>
+            <div class="chips"><span class="chip">Role Based Access Control</span><span class="chip">Workflow Design</span><span class="chip">Acceptance Criteria</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="users"></i></span>
             <div><h4>Business Development App</h4><p>Business development CRM built on <b>HubSpot</b>, with a <b>personalised mobile application</b> built for the sales team. Leads and corporate contacts are tagged, managers have a day and week meeting planner, and the app adds location tagging so field visits can be followed. Requirements were written and the build coordinated with the development team.</p>
-            <div class="chips"><span class="chip">CRM Design</span><span class="chip">HubSpot</span><span class="chip">Mobile Application</span><span class="chip">Geolocation Requirement</span><span class="chip">Vendor Management</span></div></div></div>
+            <div class="chips"><span class="chip">CRM Design</span><span class="chip">HubSpot</span><span class="chip">Mobile Application</span><span class="chip">Vendor Management</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="browser"></i></span>
-            <div><h4>Admin Web Portal</h4><p>Back office web portal built on Django for operations: booking management, team assignment, data export and service catalogue sync with the customer app. A confirmed booking sends an automatic <b>driver notification with a direct maps link</b> and opens a dedicated chat group. Requirements were documented as functional specifications and Figma flows for the backend developer.</p>
+            <div><h4>Admin Web Portal</h4><p>Back office web portal built on Django for operations: booking management, team assignment, data export and service catalogue sync with the customer app. A confirmed booking sends an automatic <b>driver notification with a direct maps link</b> and opens a dedicated chat group. Specified end to end as functional specifications and Figma flows for the backend developer.</p>
             <div class="chips"><span class="chip">Functional Specifications</span><span class="chip">Dispatch Workflow</span><span class="chip">Django</span><span class="chip">Figma</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="pin"></i></span>
-            <div><h4>Feature Prioritisation</h4><p>Features were selected with <b>MoSCoW and RICE</b> on customer impact and reach. <b>Live arrival tracking</b> ranked first: customers waiting at home want to know where the team is and when it will arrive, so live status, team location on a map and an estimated arrival time were built, backed by Riyadh competitor research showing the gap among providers.</p>
-            <div class="chips"><span class="chip">Customer Insight</span><span class="chip">Feature Prioritisation</span><span class="chip">MoSCoW</span><span class="chip">RICE</span><span class="chip">Competitor Gap Analysis</span></div></div></div>
+            <div><h4>Feature Prioritisation</h4><p>Features were prioritised with <b>MoSCoW and RICE</b> on customer impact and reach. <b>Live arrival tracking</b> was selected first, because customers waiting at home want to know where the team is and when it will arrive. Live status, team location on a map and an estimated arrival time were built, informed by Riyadh competitor research that showed the gap among providers.</p>
+            <div class="chips"><span class="chip">MoSCoW</span><span class="chip">RICE</span><span class="chip">Customer Insight</span><span class="chip">Competitor Gap Analysis</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="chart"></i></span>
-            <div><h4>KPI and MIS Reporting</h4><p>Management dashboard built around <b>five core metrics</b>, each with a defined calculation so reporting stays consistent across teams. Developed in Excel and Tableau and presented to senior leadership. It replaced a manual reporting cycle and reduces operating cost by about <b>AED 24,000 a year</b>.</p>
-            <div class="chips"><span class="chip">KPI Framework</span><span class="chip">MIS</span><span class="chip">Tableau</span><span class="chip">Excel</span><span class="chip">Stakeholder Reporting</span></div></div></div>
+            <div><h4>KPI and MIS Reporting</h4><p>Management dashboard built in Excel and Tableau around <b>five core metrics</b>, each with a defined calculation so reporting stays consistent across teams, and presented to senior leadership. It replaced a manual reporting cycle and reduces operating cost by about <b>AED 24,000 a year</b>.</p>
+            <div class="chips"><span class="chip">KPI Framework</span><span class="chip">MIS</span><span class="chip">Tableau</span><span class="chip">Excel</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="flow"></i></span>
-            <div><h4>Lead Capture and Experimentation</h4><p>Call and chat leads from Ziwo and Respond.io are routed into the CRM through <b>Zapier automations</b>, with an outcome tag on every lead to support marketing and budget analysis. A structured <b>A/B test</b> across the core app flows led to a product recommendation.</p>
+            <div><h4>Lead Capture and Experimentation</h4><p>Set up <b>Zapier automations</b> that route call and chat leads from Ziwo and Respond.io into the CRM, with an outcome tag on every lead to support marketing and budget analysis. Ran a structured <b>A/B test</b> across the core app flows that led to a product recommendation.</p>
             <div class="chips"><span class="chip">Zapier</span><span class="chip">Workflow Automation</span><span class="chip">Lead Tagging</span><span class="chip">A/B Testing</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="link"></i></span>
             <div><h4>Integrations</h4><p>Evaluated <b>video consultation providers</b> on integration effort, user experience, encryption and DHA compliance, and supported the mobile developer on the API integration covering secure data handling, appointment tracking and automatic prescriptions. Also coordinated <b>GPS fleet tracking with MyLocator</b>: feature review, driver and vehicle profile mapping, and a sync with the booking system for real time team visibility.</p>
@@ -496,13 +506,13 @@ h1,h2{letter-spacing:-.01em}
         <div class="items">
           <div class="item"><span class="ic"><i data-icon="users"></i></span>
             <div><h4>Call Centre CRM on Zoho</h4><p>Designed the lead pipeline and dashboard and wrote the requirements for the development team. Every inbound channel, from ads and calls to WhatsApp and Instagram chats, appears as a card on a board with defined lead statuses. A <b>phone number lookup</b> shows earlier bookings so repeat callers are served faster.</p>
-            <div class="chips"><span class="chip">CRM Design</span><span class="chip">Lead Pipeline</span><span class="chip">Dashboards</span><span class="chip">Requirements</span><span class="chip">Team Coordination</span></div></div></div>
+            <div class="chips"><span class="chip">CRM Design</span><span class="chip">Lead Pipeline</span><span class="chip">Dashboards</span><span class="chip">Requirements</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="scale"></i></span>
             <div><h4>CRM Selection</h4><p>Compared <b>eight vendors</b> against common criteria in an evaluation matrix to support the platform decision, then documented the customisation requirements for the chosen vendor.</p>
             <div class="chips"><span class="chip">Vendor Evaluation</span><span class="chip">Evaluation Matrix</span><span class="chip">Procurement</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="globe"></i></span>
             <div><h4>Market Research & Go To Market Strategy</h4><p>Analysed <b>three service verticals</b> and the <b>Riyadh home services market</b>, covering competitor offerings, user experience, pricing models, insurance acceptance and licensing requirements. Documented gaps such as round the clock availability, insurance integration and multilingual support. The report informed expansion planning and positioning.</p>
-            <div class="chips"><span class="chip">Market Research</span><span class="chip">Competitor Analysis</span><span class="chip">Go To Market Strategy</span><span class="chip">Positioning</span><span class="chip">Regulatory Review</span></div></div></div>
+            <div class="chips"><span class="chip">Market Research</span><span class="chip">Competitor Analysis</span><span class="chip">Go To Market Strategy</span><span class="chip">Regulatory Review</span></div></div></div>
           <div class="item"><span class="ic"><i data-icon="file"></i></span>
             <div><h4>Process Digitisation</h4><p>Documented each workflow as it ran in practice and converted manual records into <b>structured process documentation</b>, with data cleansing to keep the records reliable.</p>
             <div class="chips"><span class="chip">Process Documentation</span><span class="chip">Data Quality</span></div></div></div>
@@ -617,7 +627,7 @@ h1,h2{letter-spacing:-.01em}
     <div class="sec-head reveal">
       <p class="eyebrow">Contact</p>
       <h2>Get in touch.</h2>
-      <p class="lede">Email is quickest. Calls and WhatsApp work too.</p>
+      <p class="lede">Available by email, phone and WhatsApp.</p>
     </div>
     <div class="cards">
       <div class="card reveal"><span class="ci"><i data-icon="mail"></i></span><small>Email</small><b>mauryabagi@gmail.com</b>
@@ -826,6 +836,9 @@ h1,h2{letter-spacing:-.01em}
     }).join('') + '</div>';
 
   var CERTS = [
+    { name: "Management Consulting Job Simulation", issuer: "PwC, Forage", date: "In progress", wip: true, file: "pwc-forage" },
+    { name: "Project Manager Job Simulation", issuer: "Siemens Mobility, Forage", date: "In progress", wip: true },
+    { name: "Strategic Consulting Job Simulation", issuer: "Boston Consulting Group, Forage", date: "October 2026", file: "bcg-forage" },
     { name: "McKinsey Forward Program", issuer: "McKinsey & Company", date: "June 2026", file: "mckinsey" },
     { name: "Project Management in Dynamics 365 Project Operations", issuer: "Microsoft", date: "May 2026", file: "microsoft-dynamics" },
     { name: "Agile Project Management", issuer: "HP LIFE", date: "May 2026", file: "hp-life-agile" },
@@ -833,10 +846,7 @@ h1,h2{letter-spacing:-.01em}
     { name: "Data Science and Analytics", issuer: "HP LIFE", date: "May 2026", file: "hp-life-data-science" },
     { name: "Data Analysis", issuer: "Microsoft", date: "May 2026", file: "microsoft-data-analysis" },
     { name: "Generative AI Mastermind", issuer: "Outskill", date: "May 2026", file: "outskill-genai" },
-    { name: "Google Analytics Certification", issuer: "Google", date: "February 2026", file: "google-analytics" },
-    { name: "Management Consulting Job Simulation", issuer: "PwC, Forage", date: "October 2026", file: "pwc-forage" },
-    { name: "Strategic Consulting Job Simulation", issuer: "Boston Consulting Group, Forage", file: "bcg-forage" },
-    { name: "Project Manager Job Simulation", issuer: "Siemens Mobility, Forage", date: "In progress", wip: true }
+    { name: "Google Analytics Certification", issuer: "Google", date: "February 2026", file: "google-analytics" }
   ];
   var certList = $('#certList');
   certList.innerHTML = CERTS.map(function (c, i) {
